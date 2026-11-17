@@ -69,4 +69,5 @@ def get_fibonacci(
     return {
         "n": n,
         "result": result,
+        "erdbeere": "testundso",
     }

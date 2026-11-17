@@ -32,7 +32,7 @@ function App() {
 
     try {
       // 1. HTTP GET-Anfrage an das Python-FastAPI-Backend senden
-      const response = await fetch(`http://localhost:8000/api/fibonacci?n=${encodeURIComponent(n)}`);
+      const response = await fetch(`/api/fibonacci?n=${encodeURIComponent(n)}`);
 
       // 2. JSON-Antwort parsen
       const data = await response.json();
@@ -93,6 +93,7 @@ function App() {
           <div className="status-box result">
             <div className="result-header">Ergebnis für F({result.n}):</div>
             <div className="result-value">{result.result}</div>
+            <div className="result-test">{result.erdbeere}</div>
           </div>
         )}
       </div>
